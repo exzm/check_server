@@ -17,6 +17,6 @@ if ($result) {
         $message .= "<li>{$problem}</li>";
     }
     $message .= '</ul>';
-    mail($to, $subject, $message);
+    mail($to, $subject, $message, 'Content-type: text/html;');
 }
 
